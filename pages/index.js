@@ -14,12 +14,10 @@ export default function Home({ articles }) {
   );
 }
 
-//fetch them retrun them as props for component to use
+//fetch from our created endpoint them retrun them as props for component to use
 export const getStaticProps = async () => {
   //normal fetch data
-  const res = await fetch(
-    "https://jsonplaceholder.typicode.com/posts?_limit=6"
-  );
+  const res = await fetch("/api/articles");
   const articles = await res.json();
 
   //return data as props
@@ -29,3 +27,19 @@ export const getStaticProps = async () => {
     },
   };
 };
+
+// //fetch them retrun them as props for component to use
+// export const getStaticProps = async () => {
+//   //normal fetch data
+//   const res = await fetch(
+//     "https://jsonplaceholder.typicode.com/posts?_limit=6"
+//   );
+//   const articles = await res.json();
+
+//   //return data as props
+//   return {
+//     props: {
+//       articles,
+//     },
+//   };
+// };
