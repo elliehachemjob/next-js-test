@@ -5,9 +5,9 @@ function Header() {
   return (
     <div>
       <h1 className={headerStyles.title}>
-        <span>header1</span> header2
+        <span>span2</span> span2
       </h1>
-      <p className={headerStyles.description}>next js test description</p>
+      <p className={headerStyles.description}>Keep it up</p>
     </div>
   );
 }

@@ -5,9 +5,9 @@ import ArticleItem from "./ArticleItem";
 function ArticleList({ articles }) {
   return (
     <div className={articleStyles.grid}>
-      {articles.map((article) => {
-        return <ArticleItem article={article} />;
-      })}
+      {articles.map((article) => (
+        <ArticleItem article={article} />
+      ))}
     </div>
   );
 }
