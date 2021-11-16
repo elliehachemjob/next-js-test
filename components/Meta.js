@@ -15,9 +15,9 @@ function Meta({ title, keywords, description }) {
 }
 
 Meta.defaultProps = {
-  title: "WebDev Newz",
+  title: "default ellie website",
   keywords: "web development, programming",
-  description: "Get the latest news in web dev",
+  description: "Get the latest news about this website",
 };
 
 export default Meta;
